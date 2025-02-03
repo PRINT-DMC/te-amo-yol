@@ -1,0 +1,102 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ffe6e6;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    position: relative;
+}
+
+img {
+    width: 250px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+button {
+    padding: 15px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+#yes {
+    background-color: green;
+    color: white;
+}
+
+#no {
+    background-color: red;
+    color: white;
+    transition: opacity 1s ease;
+    position: relative;
+}
+
+#no.fade-out {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#loveMessage {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+#gif2 {
+    width: 250px;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.heart {
+    width: 200px;
+    height: 200px;
+    background-color: purple;
+    position: relative;
+    transform: rotate(-45deg);
+    margin-top: 40px;
+}
+
+.heart:before, .heart:after {
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-color: purple;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.heart:before {
+    top: -100px;
+    left: 0;
+}
+
+.heart:after {
+    left: 100px;
+    top: 0;
+}
+
+#finalMessage {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 40px;
+    color: black;
+}
